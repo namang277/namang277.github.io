@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .photo {
+        display: inline-block;
+    }
+
+    body {
+        background-color: rgb(245,162,1);
+    }
+
+    h1 {
+        border: 2px solid;
+        border-radius: 12px;
+        border-width: 2px;
+        margin-right: 380px;
+        outline-style: double;
+        outline-width: 5px;
+        background-color: rgb(0,83,122);
+        color: white;
+        border-color: rgb(11,30,51);
+        outline-color: rgb(11,30,51);
+        text-align: center;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.2), 0 16px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    ol {
+        border-style: solid;
+        border-width: 2px;
+        border-color: black;
+        background-color: rgb(0,83,122);
+        color: white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 10px;
+        border-radius: 15px;
+        box-shadow: 10px 10px 5px rgb(11,30,51);
+        width: 499px;
+  height: 429px;
+  transition: width 2s, height 2s;
+    }
+    ol:hover {
+  width: 509px;
+  height: 435px;
+    }
+    img {
+        border-style: solid;
+        margin-left: 40px;
+        padding-top: 51px;
+        padding-bottom: 50px;
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 10px 10px 5px 5px rgb(11,30,51);
+    }
+</style>
+
+<body>
+    <h1 style="font-family:verdana;"> Delete at Last Node by Naman Gupta CSE-A 027 </h1>
+    <hr color="">
+    <div class="photo">
+        <p style="text-align:center;">
+        <ol
+            style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: 14px;">
+            <li>START</li>
+            <br>
+            <li>IF HEAD = NULL<br>Write UNDERFLOW<br>
+                Go to Step 9 <br>
+                [END OF IF] <br>//If the first node is null or there is only one node, then they return null. </li>
+            &nbsp;<li>SET PTR = HEAD <br>//ptr will point to head node</li>
+            &nbsp;<li>Repeat Steps 5 and 6 while PTR -> NEXT!= NULL <br>//traversing two pointers, preptr to 2nd last
+                node and ptr to last node</li>
+            &nbsp;<li>SET PREPTR = PTR</li>
+            &nbsp;<li>SET PTR = PTR -> NEXT <br>END OF LOOP //exiting step 5 and 6</li>
+            &nbsp; <li>SET PREPTR -> NEXT = NULL <br>//deleting the last node by pointing the second last node to NULL
+            </li>
+            &nbsp;<li>FREE PTR <br>//deallocating the memory of last node</li>
+            &nbsp;<li>EXIT</li>
+        </ol>
+        </p>
+    </div>
+    <div class="photo"><img style="padding-left: 0px;" class="photo"
+            src="https://allcprogrammingandalgorithm.files.wordpress.com/2019/05/screenshot_2019-05-23-rema-thareja-pdf8.png"
+            alt="haa">
+    </div>
+</body>
+</html>
